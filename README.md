@@ -1,2 +1,0 @@
-# invoiceAPP
-Invoice, Bid, budget
