@@ -2,51 +2,54 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const ForeclosureCalculatorWrapper = styled.div`
-  max-width: 600px; /* Updated max-width */
+  max-width: 800px; /* Updated max-width */
   margin: 0 auto;
-  padding: 40px; /* Updated padding */
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 60px; /* Updated padding */
+  border: 2px solid #ccc; /* Updated border */
+  border-radius: 8px; /* Updated border-radius */
 `;
 
 const CalculatorTitle = styled.h1`
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Updated margin-bottom */
+  font-size: 28px; /* Updated font-size */
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Updated margin-bottom */
 `;
 
 const Label = styled.label`
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Updated margin-bottom */
+  font-size: 18px; /* Updated font-size */
 `;
 
 const Input = styled.input`
   width: 100%;
-  padding: 5px;
+  padding: 10px; /* Updated padding */
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px; /* Updated border-radius */
 `;
 
 const CalculateButton = styled.button`
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 15px; /* Updated padding */
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px; /* Updated border-radius */
   cursor: pointer;
 `;
 
 const ResultContainer = styled.div`
-  margin-top: 20px;
+  margin-top: 30px; /* Updated margin-top */
 `;
 
 const ResultItem = styled.p`
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Updated margin-bottom */
+  font-size: 18px; /* Updated font-size */
 `;
 
 function ForeclosureCalculator() {
