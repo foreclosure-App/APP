@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const ForeclosureCalculatorWrapper = styled.div`
-  max-width: 400px;
+  max-width: 600px; /* Updated max-width */
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px; /* Updated padding */
   border: 1px solid #ccc;
   border-radius: 5px;
 `;
