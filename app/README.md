@@ -78,3 +78,4 @@ Clone the repository and one-click deploy to Netlify for free!
 - [MDX](https://github.com/mdx-js/mdx)
 - [TypeScript](https://github.com/Microsoft/TypeScript)
 
+/Users/adamrodriguez/Documents/APP/app/
