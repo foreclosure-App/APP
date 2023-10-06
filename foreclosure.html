@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foreclosure Calculator</title>
+  <style>
+    /* Add any custom styles for the calculator here */
+  </style>
+</head>
+<body>
+  <h1>Foreclosure Calculator</h1>
+
+  <form id="foreclosure-form">
+    <label for="loan-amount">Loan Amount:</label>
+    <input type="number" id="loan-amount" name="loan-amount" required>
+
+    <label for="interest-rate">Interest Rate:</label>
+    <input type="number" id="interest-rate" name="interest-rate" required>
+
+    <label for="loan-term">Loan Term (in years):</label>
+    <input type="number" id="loan-term" name="loan-term" required>
+
+    <label for="monthly-payment">Monthly Payment:</label>
+    <input type="number" id="monthly-payment" name="monthly-payment" required>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="foreclosure-result"></div>
+
+  <script src="foreclosure.js"></script>
+</body>
+</html>
