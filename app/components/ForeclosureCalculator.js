@@ -1,5 +1,53 @@
 import React, { useState } from 'react';
-import './ForeclosureCalculator.css';
+import styled from 'styled-components';
+
+const ForeclosureCalculatorWrapper = styled.div`
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+`;
+
+const CalculatorTitle = styled.h1`
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
+const FormGroup = styled.div`
+  margin-bottom: 10px;
+`;
+
+const Label = styled.label`
+  display: block;
+  margin-bottom: 5px;
+`;
+
+const Input = styled.input`
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+`;
+
+const CalculateButton = styled.button`
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+`;
+
+const ResultContainer = styled.div`
+  margin-top: 20px;
+`;
+
+const ResultItem = styled.p`
+  margin-bottom: 5px;
+`;
 
 function ForeclosureCalculator() {
   const [loanAmount, setLoanAmount] = useState('');
@@ -25,13 +73,13 @@ function ForeclosureCalculator() {
   };
 
   return (
-    <div className="foreclosure-calculator">
-      <h1 className="calculator-title">Foreclosure Calculator</h1>
+    <ForeclosureCalculatorWrapper>
+      <CalculatorTitle>Foreclosure Calculator</CalculatorTitle>
 
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="loan-amount">Loan Amount:</label>
-          <input
+        <FormGroup>
+          <Label htmlFor="loan-amount">Loan Amount:</Label>
+          <Input
             type="number"
             id="loan-amount"
             name="loan-amount"
@@ -39,11 +87,11 @@ function ForeclosureCalculator() {
             onChange={(e) => setLoanAmount(e.target.value)}
             required
           />
-        </div>
+        </FormGroup>
 
-        <div className="form-group">
-          <label htmlFor="interest-rate">Interest Rate:</label>
-          <input
+        <FormGroup>
+          <Label htmlFor="interest-rate">Interest Rate:</Label>
+          <Input
             type="number"
             id="interest-rate"
             name="interest-rate"
@@ -51,11 +99,11 @@ function ForeclosureCalculator() {
             onChange={(e) => setInterestRate(e.target.value)}
             required
           />
-        </div>
+        </FormGroup>
 
-        <div className="form-group">
-          <label htmlFor="loan-term">Loan Term (in years):</label>
-          <input
+        <FormGroup>
+          <Label htmlFor="loan-term">Loan Term (in years):</Label>
+          <Input
             type="number"
             id="loan-term"
             name="loan-term"
@@ -63,11 +111,11 @@ function ForeclosureCalculator() {
             onChange={(e) => setLoanTerm(e.target.value)}
             required
           />
-        </div>
+        </FormGroup>
 
-        <div className="form-group">
-          <label htmlFor="monthly-payment">Monthly Payment:</label>
-          <input
+        <FormGroup>
+          <Label htmlFor="monthly-payment">Monthly Payment:</Label>
+          <Input
             type="number"
             id="monthly-payment"
             name="monthly-payment"
@@ -75,17 +123,17 @@ function ForeclosureCalculator() {
             onChange={(e) => setMonthlyPayment(e.target.value)}
             required
           />
-        </div>
+        </FormGroup>
 
-        <button type="submit" className="calculate-button">Calculate</button>
+        <CalculateButton type="submit">Calculate</CalculateButton>
       </form>
 
-      <div className="result-container">
-        <p className="result-item">Total Interest: ${totalInterest.toFixed(2)}</p>
-        <p className="result-item">Total Payment: ${totalPayment.toFixed(2)}</p>
-        <p className="result-item">Remaining Balance: ${remainingBalance.toFixed(2)}</p>
-      </div>
-    </div>
+      <ResultContainer>
+        <ResultItem>Total Interest: ${totalInterest.toFixed(2)}</ResultItem>
+        <ResultItem>Total Payment: ${totalPayment.toFixed(2)}</ResultItem>
+        <ResultItem>Remaining Balance: ${remainingBalance.toFixed(2)}</ResultItem>
+      </ResultContainer>
+    </ForeclosureCalculatorWrapper>
   );
 }
 
