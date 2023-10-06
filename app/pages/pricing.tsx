@@ -34,6 +34,8 @@ const Wrapper = styled.div`
 
 const StepsSection = styled.section`
   margin-top: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
 `;
 
 const StepsTitle = styled.h2`
