@@ -7,9 +7,6 @@ export default function PricingPage() {
   return (
     <Page title="Pricing" description="Cupidatat et reprehenderit ullamco aute ullamco anim tempor.">
       <Wrapper>
-        <PricingTablesSection />
-        <FaqSection />
-
         <StepsSection>
           <StepsTitle>Steps to Sell Your Home to Our Company</StepsTitle>
           <StepsList>
@@ -21,6 +18,9 @@ export default function PricingPage() {
             <StepItem>Step 6: Once everything is finalized, we will close the deal and purchase your home.</StepItem>
           </StepsList>
         </StepsSection>
+
+        <PricingTablesSection />
+        <FaqSection />
       </Wrapper>
     </Page>
   );
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 const StepsSection = styled.section`
   margin-top: 4rem;
   text-align: center;
-  font-size: 2rem; /* Updated to be bigger */
+  font-size: 2rem;
 `;
 
 const StepsTitle = styled.h2`
