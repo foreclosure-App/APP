@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ForeclosureCalculator.css';
 
 function ForeclosureCalculator() {
   const [loanAmount, setLoanAmount] = useState('');
@@ -24,57 +25,65 @@ function ForeclosureCalculator() {
   };
 
   return (
-    <div>
-      <h1>Foreclosure Calculator</h1>
+    <div className="foreclosure-calculator">
+      <h1 className="calculator-title">Foreclosure Calculator</h1>
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="loan-amount">Loan Amount:</label>
-        <input
-          type="number"
-          id="loan-amount"
-          name="loan-amount"
-          value={loanAmount}
-          onChange={(e) => setLoanAmount(e.target.value)}
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="loan-amount">Loan Amount:</label>
+          <input
+            type="number"
+            id="loan-amount"
+            name="loan-amount"
+            value={loanAmount}
+            onChange={(e) => setLoanAmount(e.target.value)}
+            required
+          />
+        </div>
 
-        <label htmlFor="interest-rate">Interest Rate:</label>
-        <input
-          type="number"
-          id="interest-rate"
-          name="interest-rate"
-          value={interestRate}
-          onChange={(e) => setInterestRate(e.target.value)}
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="interest-rate">Interest Rate:</label>
+          <input
+            type="number"
+            id="interest-rate"
+            name="interest-rate"
+            value={interestRate}
+            onChange={(e) => setInterestRate(e.target.value)}
+            required
+          />
+        </div>
 
-        <label htmlFor="loan-term">Loan Term (in years):</label>
-        <input
-          type="number"
-          id="loan-term"
-          name="loan-term"
-          value={loanTerm}
-          onChange={(e) => setLoanTerm(e.target.value)}
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="loan-term">Loan Term (in years):</label>
+          <input
+            type="number"
+            id="loan-term"
+            name="loan-term"
+            value={loanTerm}
+            onChange={(e) => setLoanTerm(e.target.value)}
+            required
+          />
+        </div>
 
-        <label htmlFor="monthly-payment">Monthly Payment:</label>
-        <input
-          type="number"
-          id="monthly-payment"
-          name="monthly-payment"
-          value={monthlyPayment}
-          onChange={(e) => setMonthlyPayment(e.target.value)}
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="monthly-payment">Monthly Payment:</label>
+          <input
+            type="number"
+            id="monthly-payment"
+            name="monthly-payment"
+            value={monthlyPayment}
+            onChange={(e) => setMonthlyPayment(e.target.value)}
+            required
+          />
+        </div>
 
-        <button type="submit">Calculate</button>
+        <button type="submit" className="calculate-button">Calculate</button>
       </form>
 
-      <div id="foreclosure-result">
-        <p>Total Interest: ${totalInterest.toFixed(2)}</p>
-        <p>Total Payment: ${totalPayment.toFixed(2)}</p>
-        <p>Remaining Balance: ${remainingBalance.toFixed(2)}</p>
+      <div className="result-container">
+        <p className="result-item">Total Interest: ${totalInterest.toFixed(2)}</p>
+        <p className="result-item">Total Payment: ${totalPayment.toFixed(2)}</p>
+        <p className="result-item">Remaining Balance: ${remainingBalance.toFixed(2)}</p>
       </div>
     </div>
   );
