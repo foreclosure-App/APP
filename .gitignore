@@ -8,3 +8,16 @@ app/.next/static/chunks/webpack.js
 app/.next/build-manifest.json
 app/.next/cache/webpack/client-development/index.pack
 app/.next/static/development/_buildManifest.js
+app/.next/server/pages/foreclosure.js
+app/.next/cache/webpack/client-development/index.pack
+app/.next/cache/webpack/client-development/index.pack.old
+app/.next/cache/webpack/server-development/1.pack
+app/.next/cache/webpack/server-development/3.pack
+app/.next/cache/webpack/server-development/6.pack
+app/.next/cache/webpack/server-development/index.pack
+app/.next/cache/webpack/server-development/index.pack.old
+app/.next/build-manifest.json
+app/.next/server/pages-manifest.json
+app/.next/server/pages/foreclosure.js
+app/.next/static/chunks/webpack.js
+app/.next/static/development/_buildManifest.js
