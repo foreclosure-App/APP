@@ -21,10 +21,10 @@ import { NavItems } from 'types';
 
 const navItems: NavItems = [
   { title: 'Protect your future', href: '/features' },
-  { title: 'Pricing', href: '/pricing' },
+  { title: 'Steps', href: '/steps' },
   { title: 'Contact', href: '/contact' },
   { title: 'Sign up', href: '/sign-up', outlined: true },
-  { title: 'Foreclosure Calculator', href: '/foreclosure.html' }, // Added this line
+  { title: 'Foreclosure Calculator', href: '/foreclosure' }, // Added this line
 ];
 
 const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
