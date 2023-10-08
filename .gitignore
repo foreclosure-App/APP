@@ -1,0 +1,6 @@
+.aider*
+app/.next/trace
+app/.next/cache/
+app/.next/static/
+app/.next/static/chunks/pages/pricing.js
+app/.next/server/pages/pricing.js

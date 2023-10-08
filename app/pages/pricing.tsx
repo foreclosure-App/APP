@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import Page from 'components/Page';
+import { media } from 'utils/media';
 import FaqSection from 'views/PricingPage/FaqSection';
-import PricingTablesSection from 'views/PricingPage/PricingTablesSection';
+// import PricingTablesSection from 'views/PricingPage/PricingTablesSection';
 
 export default function PricingPage() {
   return (
-    <Page title="Pricing" description="Cupidatat et reprehenderit ullamco aute ullamco anim tempor.">
+    <Page title="Steps" description="Cupidatat et reprehenderit ullamco aute ullamco anim tempor.">
       <Wrapper>
         <StepsSection>
           <StepsTitle>Steps to Sell Your Home to Our Company</StepsTitle>
@@ -19,7 +20,6 @@ export default function PricingPage() {
           </StepsList>
         </StepsSection>
 
-        <PricingTablesSection />
         <FaqSection />
       </Wrapper>
     </Page>
@@ -39,8 +39,15 @@ const StepsSection = styled.section`
 `;
 
 const StepsTitle = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 2rem;
+font-size: 5.2rem;
+font-weight: bold;
+line-height: 1.1;
+letter-spacing: -0.03em;
+text-align: center;
+
+${media('<=tablet')} {
+  font-size: 4.6rem;
+}
 `;
 
 const StepsList = styled.ul`
