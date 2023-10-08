@@ -7,5 +7,4 @@ app/.next/server/pages/pricing.js
 app/.next/static/chunks/webpack.js
 app/.next/build-manifest.json
 app/.next/cache/webpack/client-development/index.pack
-.gitignore
 app/.next/static/development/_buildManifest.js
