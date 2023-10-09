@@ -18,11 +18,10 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the fastest foreclosure funding product you have ever seen</CustomOverTitle>
-        <Heading>Make your foreclosure easier with our help</Heading>
+        <CustomOverTitle>Welcome to [Your Company Name] - Your Lifeline to Foreclosure Freedom</CustomOverTitle>
+        <Heading>You&apos;re Not Alone, and There&apos;s a Way Out</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+        We understand that facing foreclosure is overwhelming. The stress, the uncertainty, the feeling that youre running out of options. But take a deep breath. Youve come to the right place.
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>

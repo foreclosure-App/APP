@@ -11,16 +11,16 @@ import { media } from 'utils/media';
 const TESTIMONIALS = [
   {
     companyLogoUrl: '/testimonials/company-logo-1.svg',
-    content: `Really good. I am so pleased with this product. I didn't even need training.`,
+    content: `I felt like a huge weight was lifted off my shoulders the moment I spoke to [Your Company Name]. They guided me through every step and I avoided foreclosure. Thank you!"`,
     author: {
-      name: 'Clyde Edwards',
+      name: 'Sarah, Florida',
       title: 'Very Serious Man',
       avatarUrl: '/testimonials/author-photo-1.jpeg',
     },
   },
   {
     companyLogoUrl: '/testimonials/company-logo-2.svg',
-    content: `It's really wonderful. I use saas product often. Thank You! Saas product has really helped our business.`,
+    content: `I felt like a huge weight was lifted off my shoulders the moment I spoke to [Your Company Name]. They guided me through every step and I avoided foreclosure. Thank you!`,
     author: {
       name: 'Jimmy Hunter',
       title: 'Sigma Male University Graduate',
@@ -29,7 +29,7 @@ const TESTIMONIALS = [
   },
   {
     companyLogoUrl: '/testimonials/company-logo-3.svg',
-    content: `Since I invested in saas product I made over 100,000 dollars profits. It really saves me time and effort. saas product is exactly what our business has been lacking.`,
+    content: `I felt like a huge weight was lifted off my shoulders the moment I spoke to [Your Company Name]. They guided me through every step and I avoided foreclosure. Thank you!`,
     author: {
       name: 'Marjorie Morgan',
       title: 'Chief Chad Officer',

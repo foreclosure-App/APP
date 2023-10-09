@@ -21,3 +21,4 @@ app/.next/server/pages-manifest.json
 app/.next/server/pages/foreclosure.js
 app/.next/static/chunks/webpack.js
 app/.next/static/development/_buildManifest.js
+app/.next/cache/webpack/client-development/1.pack

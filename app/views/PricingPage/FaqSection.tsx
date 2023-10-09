@@ -6,35 +6,34 @@ export default function FaqSection() {
   return (
     <Wrapper>
       <SectionTitle>Frequently asked question</SectionTitle>
-      <Accordion title="Eiusmod eu laboris qui minim incididunt et id in elit veniam Lorem nulla ullamco.">
-        Voluptate ad aliquip in adipisicing incididunt officia. Aliqua consectetur id commodo fugiat sunt dolor minim. Aliqua ut deserunt
-        sit irure tempor esse labore elit commodo pariatur in nisi minim culpa. Exercitation eu in mollit tempor cillum excepteur
-        adipisicing cillum do et dolor est deserunt dolor. Deserunt reprehenderit nulla commodo quis et consectetur deserunt ea eiusmod
-        reprehenderit aliqua. Cupidatat commodo do ad ullamco ad enim sint sint irure amet culpa. Consequat sit Lorem sint culpa.
+      <Accordion title="What is [Your Company Name] and how can you help me?">
+      We are a specialized service that helps homeowners avoid foreclosure by purchasing their homes quickly. Our team of experts will guide you through the process, offering a hassle-free solution to your urgent property concerns.
       </Accordion>
-      <Accordion title="Minim eiusmod aliquip in ea mollit fugiat ullamco veniam enim sint exercitation.">
-        Lorem laboris ullamco labore consectetur duis amet excepteur esse labore sunt pariatur do aliqua amet. Enim exercitation labore
-        nostrud consectetur veniam eiusmod pariatur do commodo dolore pariatur amet veniam. Irure do et ut dolor quis reprehenderit anim
-        aute sint deserunt tempor sunt nostrud. Deserunt et aute non dolor.
+      <Accordion title=" How quickly can you buy my home?">
+      The timeline can vary depending on various factors such as the condition of your home, its location, and the urgency of the foreclosure process. However, we aim to close deals as quickly as possible, often within 7-14 days.
       </Accordion>
-      <Accordion title="Commodo officia dolore anim occaecat.">
-        Enim ea cillum pariatur incididunt incididunt sunt ea exercitation nisi aliquip. Cillum deserunt ut esse Lorem non qui labore labore
-        eiusmod magna incididunt ut quis. Nulla excepteur adipisicing ipsum do non occaecat.
+      <Accordion title="Will I have to pay any fees or commissions?">
+      We pride ourselves on transparency. All fees and processes will be clearly explained upfront. Generally, we cover the closing costs and there are no commissions involved since we are not acting as realtors but as direct buyers.
       </Accordion>
-      <Accordion title="Irure Lorem proident esse enim.">
-        Ipsum laboris sit minim occaecat nisi qui. Tempor eiusmod fugiat occaecat labore. Exercitation do cillum cillum laborum velit
-        laborum ea magna duis laborum in anim. Enim laboris dolore laboris consectetur enim duis deserunt consequat excepteur ipsum
-        excepteur. Non dolor magna et est cillum sint eiusmod sit eiusmod veniam id. Aliqua non non labore amet laborum fugiat ad nostrud ex
-        officia exercitation.
+      <Accordion title="How do you determine the offer price for my home?">
+      Our team will assess the value of your home based on its condition, location, and the current market trends. We aim to offer a fair price that benefits both parties.
       </Accordion>
-      <Accordion title="Ea quis consequat sunt sint aute pariatur aliquip minim voluptate.">
-        Sint eiusmod aute nulla ut esse sunt fugiat nulla exercitation duis pariatur. Magna anim incididunt magna id quis irure laborum sint
-        voluptate tempor esse elit dolore. Elit exercitation pariatur adipisicing aute. Nisi deserunt enim consequat anim adipisicing
-        laborum sint occaecat elit. Consequat officia cupidatat magna incididunt nisi in sunt duis reprehenderit ullamco in amet cillum.
-        Dolor nisi proident ipsum aute velit aliquip magna fugiat reprehenderit. Enim ex aliqua et velit exercitation reprehenderit veniam
-        do eu exercitation ad duis.
-      </Accordion>
-    </Wrapper>
+      <Accordion title="What types of properties do you buy?">
+        We buy all types of residential properties, including single-family homes, condos, townhouses, and even vacant land in some cases.
+        </Accordion>
+        <Accordion title="What if my home is in poor condition?">
+        We buy homes in any condition. You don&apos;t need to worry about repairs or renovations; we&apos;ll take care of that.
+        </Accordion>
+        <Accordion title=" Do I have to accept your offer?">
+        No, our offer is obligation-free. You are free to consider other options if you feel our offer doesn&apos;t meet your needs.
+        </Accordion>
+        <Accordion title="What happens after I agree to sell?">
+        Once you accept our offer, we&apos;ll handle all the paperwork and details, coordinating with you to close the sale as quickly as possible.
+        </Accordion>
+        <Accordion title=" Is my information confidential?">
+        Absolutely. We take your privacy very seriously and all information shared with us is confidential.
+        </Accordion>
+      </Wrapper>
   );
 }
 

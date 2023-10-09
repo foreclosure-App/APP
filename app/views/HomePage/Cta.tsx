@@ -13,11 +13,10 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <OverTitle>Get Started Today</OverTitle>
+            <SectionTitle>Don&apos;t let foreclosure define your life.</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+          Take the first step towards a brighter future. Contact us now for a free, no-obligation consultation.
           </Description>
           <ButtonGroup>
             <NextLink href="#early-access" passHref>
@@ -27,7 +26,7 @@ export default function Cta() {
             </NextLink>
             <NextLink href="#whitepaper" passHref>
               <OutlinedButton transparent>
-                Features <span>&rarr;</span>
+                Learn more <span>&rarr;</span>
               </OutlinedButton>
             </NextLink>
           </ButtonGroup>
