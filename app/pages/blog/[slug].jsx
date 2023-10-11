@@ -15,8 +15,8 @@ import ShareWidget from 'views/SingleArticlePage/ShareWidget';
 import StructuredDataHead from 'views/SingleArticlePage/StructuredDataHead';
 import { Posts, PostsDocument, Query } from '.tina/__generated__/types';
 
-export default function SingleArticlePage(props: InferGetStaticPropsType<typeof getStaticProps>) {
-  const contentRef = useRef<HTMLDivElement | null>(null);
+export default function SingleArticlePage(props) {
+  const contentRef = useRef(null);
   const [readTime, setReadTime] = useState('');
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export default function SingleArticlePage(props: InferGetStaticPropsType<typeof 
   if (!data) {
     return null;
   }
-  const { title, description, date, tags, imageUrl } = data.getPostsDocument.data as NonNullableChildrenDeep<Posts>;
+  const { title, description, date, tags, imageUrl } = data.getPostsDocument.data;
   const meta = { title, description, date: date, tags, imageUrl, author: '' };
   const formattedDate = formatDate(new Date(date));
   const absoluteImageUrl = imageUrl.replace(/\/+/, '/');
@@ -102,21 +102,21 @@ export async function getStaticPaths() {
     };
   }
 
-  type NullAwarePostsList = { getPostsList: NonNullableChildrenDeep<Query['getPostsList']> };
+  
   return {
-    paths: (postsListData as NullAwarePostsList).getPostsList.edges.map((edge) => ({
+    paths: (postsListData).getPostsList.edges.map((edge) => ({
       params: { slug: normalizePostName(edge.node.sys.basename) },
     })),
     fallback: false,
   };
 }
 
-function normalizePostName(postName: string) {
+function normalizePostName(postName) {
   return postName.replace('.mdx', '');
 }
 
-export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: string }>) {
-  const { slug } = params as { slug: string };
+export async function getStaticProps({ params }) {
+  const { slug } = params;
   const variables = { relativePath: `${slug}.mdx` };
   const query = `
     query BlogPostQuery($relativePath: String!) {
@@ -134,9 +134,9 @@ export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: s
   `;
 
   const data = (await staticRequest({
-    query: query,
-    variables: variables,
-  })) as { getPostsDocument: PostsDocument };
+    query,
+    variables,
+  }));
 
   return {
     props: { slug, variables, query, data },

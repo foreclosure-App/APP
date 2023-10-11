@@ -127,7 +127,7 @@ const TabsContainer = styled.div`
   }
 `;
 
-const ImageContainer = styled.div<{ isActive: boolean }>`
+const ImageContainer = styled.div<{ isActive}>`
   position: relative;
   overflow: hidden;
   border-radius: 0.8rem;
@@ -154,7 +154,7 @@ const ImageContainer = styled.div<{ isActive: boolean }>`
   }
 `;
 
-const Tab = styled.div<{ isActive: boolean }>`
+const Tab = styled.div<{ isActive }>`
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;

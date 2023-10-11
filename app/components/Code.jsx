@@ -82,7 +82,7 @@ const Caption = styled.small`
   font-size: 1.2rem;
 `;
 
-const CopyButton = styled.button<{ copied: boolean }>`
+const CopyButton = styled.button<{ copied }>`
   position: absolute;
   border: none;
   top: 2.4rem;
@@ -119,7 +119,7 @@ const CopyButton = styled.button<{ copied: boolean }>`
   }
 `;
 
-const CodeWrapper = styled.div<{ language: string }>`
+const CodeWrapper = styled.div<{ language }>`
   position: relative;
   border-radius: 0.3em;
   margin-top: 4.5rem;
