@@ -1,11 +1,8 @@
 import NextLink from 'next/link';
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
 import styled from 'styled-components';
-import Container from 'components/Container';
-import { media } from 'utils/media';
-
-
-
+import Container from '/components/Container';
+import { media } from '/utils/media';
 
 const footerItems = [
   {
@@ -56,7 +53,7 @@ export default function Footer() {
         <BottomBar>
           <ShareBar>
             <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
-              <a>
+              <a href="#">
                 <TwitterIcon size={50} round={true} />
               </a>
             </NextLink>

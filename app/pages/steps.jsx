@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Page from 'components/Page';
-import { media } from 'utils/media';
-import FaqSection from 'views/PricingPage/FaqSection';
+import Page from '/components/Page';
+import { media } from '/utils/media';
+import FaqSection from '/views/PricingPage/FaqSection';
 // import PricingTablesSection from 'views/PricingPage/PricingTablesSection';
 
 export default function PricingPage() {

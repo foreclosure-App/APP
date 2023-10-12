@@ -29,7 +29,7 @@ export default function PricingCard({ title, description, benefits, isOutlined, 
   );
 }
 
-const Wrapper = styled.div<{ isOutlined }>`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3rem;

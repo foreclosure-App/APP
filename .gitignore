@@ -22,3 +22,6 @@ app/.next/server/pages/foreclosure.js
 app/.next/static/chunks/webpack.js
 app/.next/static/development/_buildManifest.js
 app/.next/cache/webpack/client-development/1.pack
+app/.tina/__generated__/types.ts
+app/.tina/schema.ts
+app/.tina/__generated__/.gitignore
