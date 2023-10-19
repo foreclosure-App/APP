@@ -15,8 +15,8 @@ import ShareWidget from 'views/SingleArticlePage/ShareWidget';
 import StructuredDataHead from 'views/SingleArticlePage/StructuredDataHead';
 import { Posts, PostsDocument, Query } from '.tina/__generated__/types';
 
-export default function SingleArticlePage(props) {
-  const contentRef = useRef(null);
+export default function SingleArticlePage(props: InferGetStaticPropsType<typeof getStaticProps>) {
+  const contentRef = useRef<HTMLDivElement | null>(null);
   const [readTime, setReadTime] = useState('');
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export default function SingleArticlePage(props) {
   if (!data) {
     return null;
   }
-  const { title, description, date, tags, imageUrl } = data.getPostsDocument.data;
+  const { title, description, date, tags, imageUrl } = data.getPostsDocument.data as NonNullableChildrenDeep<Posts>;
   const meta = { title, description, date: date, tags, imageUrl, author: '' };
   const formattedDate = formatDate(new Date(date));
   const absoluteImageUrl = imageUrl.replace(/\/+/, '/');
@@ -102,21 +102,21 @@ export async function getStaticPaths() {
     };
   }
 
-  
+  type NullAwarePostsList = { getPostsList: NonNullableChildrenDeep<Query['getPostsList']> };
   return {
-    paths: (postsListData).getPostsList.edges.map((edge) => ({
+    paths: (postsListData as NullAwarePostsList).getPostsList.edges.map((edge) => ({
       params: { slug: normalizePostName(edge.node.sys.basename) },
     })),
     fallback: false,
   };
 }
 
-function normalizePostName(postName) {
+function normalizePostName(postName: string) {
   return postName.replace('.mdx', '');
 }
 
-export async function getStaticProps({ params }) {
-  const { slug } = params;
+export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: string }>) {
+  const { slug } = params as { slug: string };
   const variables = { relativePath: `${slug}.mdx` };
   const query = `
     query BlogPostQuery($relativePath: String!) {
@@ -134,9 +134,9 @@ export async function getStaticProps({ params }) {
   `;
 
   const data = (await staticRequest({
-    query,
-    variables,
-  }));
+    query: query,
+    variables: variables,
+  })) as { getPostsDocument: PostsDocument };
 
   return {
     props: { slug, variables, query, data },

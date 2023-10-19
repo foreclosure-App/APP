@@ -44,7 +44,7 @@ export default function Partners() {
   );
 }
 
-function normalizePartnerLogoName(logo) {
+function normalizePartnerLogoName(logo: string) {
   return logo.replace('.svg', '');
 }
 

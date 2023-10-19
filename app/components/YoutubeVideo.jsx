@@ -64,7 +64,7 @@ export default function YoutubeVideo(props) {
   );
 }
 
-function extractVideoHashFromUrl(url) {
+function extractVideoHashFromUrl(url: string) {
   const videoHashQueryParamKey = 'v';
   const searchParams = new URL(url).search;
   return new URLSearchParams(searchParams).getAll(videoHashQueryParamKey);
