@@ -3,9 +3,9 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
-import { useNewsletterModalContext } from '/contexts/newsletter-modal.context';
-import { ScrollPositionEffectProps, useScrollPosition } from '/hooks/useScrollPosition';
-import { media } from '/utils/media';
+// import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
+import { ScrollPositionEffectProps, useScrollPosition } from 'hooks/useScrollPosition';
+import { media } from 'utils/media';
 import Button from './Button';
 import Container from './Container';
 import Drawer from './Drawer';
@@ -132,7 +132,7 @@ const LogoWrapper = styled.a`
   color: rgb(var(--logoColor));
 `;
 
-const NavItemWrapper = styled.li`
+const NavItemWrapper = styled.li<Partial<SingleNavItem>>`
   background-color: ${(p) => (p.outlined ? 'rgb(var(--primary))' : 'transparent')};
   border-radius: 0.5rem;
   font-size: 1.3rem;

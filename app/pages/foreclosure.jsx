@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import ForeclosureCalculator from '/components/ForeclosureCalculator';
-import Page from '/components/Page';
-import FaqSection from '/views/PricingPage/FaqSection';
+import ForeclosureCalculator from 'components/ForeclosureCalculator';
+import Page from 'components/Page';
+import FaqSection from 'views/PricingPage/FaqSection';
 
 export default function PricingPage() {
   return (

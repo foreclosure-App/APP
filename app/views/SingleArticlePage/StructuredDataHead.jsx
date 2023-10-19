@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import { jsonLdScriptProps } from 'react-schemaorg';
-//import { TechArticle, WebSite } from 'schema-dts';
-import { EnvVars } from '../../env';
+import { TechArticle, WebSite } from 'schema-dts';
+import { EnvVars } from 'env';
+
 
 
 export default function StructuredDataHead(props) {
@@ -15,7 +16,7 @@ export default function StructuredDataHead(props) {
   return (
     <Head>
       <script
-        {...jsonLdScriptProps({
+        {...jsonLdScriptProps<TechArticle>({
           '@context': 'https://schema.org',
           '@type': 'TechArticle',
           mainEntityOfPage: `${currentSiteUrl}#content`,
@@ -45,7 +46,7 @@ export default function StructuredDataHead(props) {
       />
 
       <script
-        {...jsonLdScriptProps({
+        {...jsonLdScriptProps<WebSite>({
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: domainName,

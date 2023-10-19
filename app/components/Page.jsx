@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { media } from '/utils/media';
+import { EnvVars } from 'env';
+import { media } from 'utils/media';
 import Container from './Container';
 import SectionTitle from './SectionTitle';
-import { EnvVars } from '../env';
 
 
 

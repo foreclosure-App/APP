@@ -2,12 +2,12 @@ import Image from 'next/image';
 import NextImage from 'next/image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Collapse from '/components/Collapse';
-import Container from '/components/Container';
-import OverTitle from '/components/OverTitle';
-import SectionTitle from '/components/SectionTitle';
-import ThreeLayersCircle from '/components/ThreeLayersCircle';
-import { media } from '/utils/media';
+import Collapse from 'components/Collapse';
+import Container from 'components/Container';
+import OverTitle from 'components/OverTitle';
+import SectionTitle from 'components/SectionTitle';
+import ThreeLayersCircle from 'components/ThreeLayersCircle';
+import { media } from 'utils/media';
 
 const TABS = [
   {
@@ -70,7 +70,7 @@ export default function FeaturesGallery() {
     );
   });
 
-  function handleTabClick(idx) {
+  function handleTabClick(idx: number) {
     setCurrentTab(TABS[idx]);
   }
 
@@ -127,7 +127,7 @@ const TabsContainer = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
+const ImageContainer = styled.div<{ isActive}>`
   position: relative;
   overflow: hidden;
   border-radius: 0.8rem;
@@ -154,7 +154,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Tab = styled.div`
+const Tab = styled.div<{ isActive }>`
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;

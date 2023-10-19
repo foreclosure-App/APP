@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
 import styled from 'styled-components';
-import Button from '/components/Button';
-import ButtonGroup from '/components/ButtonGroup';
-import Container from '/components/Container';
-import HeroIllustration from '/components/HeroIllustration';
+import Button from 'components/Button';
+import ButtonGroup from 'components/ButtonGroup';
+import Container from 'components/Container';
+import HeroIllustration from 'components/HeroIllustration';
 
-import OverTitle from '/components/OverTitle';
-import { useNewsletterModalContext } from '/contexts/newsletter-modal.context';
-import { media } from '/utils/media';
+import OverTitle from 'components/OverTitle';
+// import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
+import { media } from 'utils/media';
 
-import homepic from '../../images/rowan-home.png';
+import homepic from '../images/rowan-home.png'
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();

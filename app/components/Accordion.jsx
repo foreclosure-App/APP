@@ -1,14 +1,14 @@
 import { PropsWithChildren, useState } from 'react';
 import styled from 'styled-components';
-import { media } from '/utils/media';
+import { media } from 'utils/media';
 import Collapse from './Collapse';
 import RichText from './RichText';
 
 
+
 export default function Accordion({ title, isOpen, children }) {
   const [hasCollapsed, setHasCollapsed] = useState(!isOpen);
-  const [isActive, setIsActive] = useState(!hasCollapsed);
-  //const isActive = !hasCollapsed;
+  const isActive = !hasCollapsed;
   return (
     <AccordionWrapper onClick={() => setHasCollapsed((prev) => !prev)}>
       <TitleWrapper>
@@ -34,7 +34,6 @@ export default function Accordion({ title, isOpen, children }) {
   );
 }
 
-
 const Title = styled.h3`
   font-size: 2rem;
   width: 90%;
@@ -51,10 +50,10 @@ const TitleWrapper = styled.div`
   align-items: center;
 `;
 
-const Icon = styled.div`
+const Icon = styled.div<{ isActive }>`
   width: 2.4rem;
   transition: transform 0.3s;
-  transform: rotateZ(${(p) => (p?.isActive ? 180 : 0)}deg);
+  transform: rotateZ(${(p) => (p.isActive ? 180 : 0)}deg);
 `;
 
 const Description = styled.div`

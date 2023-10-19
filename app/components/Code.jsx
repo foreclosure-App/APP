@@ -1,8 +1,8 @@
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 import React from 'react';
 import styled from 'styled-components';
-import ClientOnly from '/components/ClientOnly';
-import { useClipboard } from '/hooks/useClipboard';
+import ClientOnly from 'components/ClientOnly';
+import { useClipboard } from 'hooks/useClipboard';
 
 
 export default function Code({
@@ -82,7 +82,7 @@ const Caption = styled.small`
   font-size: 1.2rem;
 `;
 
-const CopyButton = styled.button`
+const CopyButton = styled.button<{ copied }>`
   position: absolute;
   border: none;
   top: 2.4rem;
@@ -119,7 +119,7 @@ const CopyButton = styled.button`
   }
 `;
 
-const CodeWrapper = styled.div`
+const CodeWrapper = styled.div<{ language }>`
   position: relative;
   border-radius: 0.3em;
   margin-top: 4.5rem;
