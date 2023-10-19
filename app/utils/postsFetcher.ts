@@ -1,6 +1,7 @@
 import matter from 'gray-matter';
 import * as fs from 'fs';
 import * as path from 'path';
+import { SingleArticle } from 'types';
 
 export async function getAllPosts() {
   return Promise.all(getAllPostsSlugs().map(getSinglePost));
