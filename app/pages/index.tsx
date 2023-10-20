@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';

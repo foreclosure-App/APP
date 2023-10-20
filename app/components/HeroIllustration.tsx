@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import homepic from '../images/rowan-home.png'
 
 export default function HeroIllustration() {

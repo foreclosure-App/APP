@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import NextImage from 'next/image';
+import Image from "next/legacy/image";
+import NextImage from "next/legacy/image";
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Collapse from 'components/Collapse';
