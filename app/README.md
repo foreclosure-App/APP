@@ -9,7 +9,7 @@
 </div>
 
 <p align="center"><b>Created with :heart:</b></p>
-<p align="center"><a href="https://blazity.com/">xyz</a> is... Contact us at <a href="mailto:contact@xyz.com">contact@xyz.com</a> if you’d like to talk about your project or just to have a chat with us</p>
+<p align="center"><a href="https://foreclosure.com/">xyz</a> is... Contact us at <a href="mailto:contact@xyz.com">contact@xyz.com</a> if you’d like to talk about your project or just to have a chat with us</p>
 
 
 <br />
