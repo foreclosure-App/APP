@@ -16,17 +16,17 @@ export default function Cta() {
           <OverTitle>Get Started Today</OverTitle>
             <SectionTitle>Don&apos;t let foreclosure define your life.</SectionTitle>
           <Description>
-          Take the first step towards a brighter future. Contact us now for a free, no-obligation consultation.
+          Take the first step towards a brighter future.
           </Description>
           <ButtonGroup>
             <NextLink href="#early-access" passHref legacyBehavior>
               <Button>
-                Subscribe to the newsletter <span>&rarr;</span>
+                Get instantly pre-qualified in 2 minutes <span>&rarr;</span>
               </Button>
             </NextLink>
             <NextLink href="#whitepaper" passHref legacyBehavior>
               <OutlinedButton transparent>
-                Learn more <span>&rarr;</span>
+                Help Center <span>&rarr;</span>
               </OutlinedButton>
             </NextLink>
           </ButtonGroup>

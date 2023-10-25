@@ -34,71 +34,44 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           
           <BasicSection imageUrl={homepic} title="Trust is critical." overTitle="Why Trust Us?">
             <p>
-            We understand that facing foreclosure is overwhelming. The stress, the uncertainty, the feeling that youre running out of options.{' '}
-              <Link href="/help-center">cool link</Link> But take a deep breath. Youve come to the right place.
+            With compassion and an understanding of the distress foreclosure brings, we provide a <strong>zero-risk solution</strong> by settling the mortgage for homeowners with equity and absorbing all closing and associated costs, making the process stress-free and straight forward.{' '}
             </p>
           </BasicSection>
-          <BasicSection imageUrl={homepic} title="How We Can Help" overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl={homepic} title="How We Can Help." overTitle="Help is at hand" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+            We extend a helping hand to individuals facing foreclosure, ensuring a smooth transition while preserving their financial stability. Our services are tailored to meet the unique needs of each client, offering a holistic approach to overcoming the challenges of foreclosure. Here’s how we can help:
             </p>
             <ul>
-              <li>Free Consultation: Speak with our foreclosure specialists to understand your options.</li>
-              <li>Legal Support: Our network of attorneys will guide you through the legal maze.</li>
-              <li>Financial Planning: Customized plans to help you manage your finances better.</li>
-              <li>Negotiation with Lenders: We'll talk to your lenders to negotiate terms that work for you.</li>
-              <li>Quick Sale Options: If needed, we can help you sell your home quickly to avoid foreclosure.</li>
+              <li><strong>Free Consultation:</strong> Speak with our foreclosure specialists to understand your options.</li>
+              <li><strong>Legal Support:</strong> Our network of local attorneys will ensure a fully transparent and and well thought out strategy.</li>
+              <li><strong>Financial Consultation:</strong> If there is a chance you can avoid losing your home, we want to help by looking at key ways to manage your finances better.</li>
+              <li><strong>Negotiation with Lenders:</strong> We'll talk to your lenders to negotiate terms and stop the foreclosure process.</li>
+              <li><strong>Quick Sale Options:</strong> We are able to mover far faster than banks so you'll be out of trouble within a week or two.</li>
             </ul>
           </BasicSection>
           <BasicSection imageUrl={homepic} title="Your Path to Financial Freedom Starts Here" overTitle="Freedom">
             <p>
-            Your Path to Financial Freedom Starts Here{' '}
-              <Link href="/help-center">cool link</Link> Our step-by-step guides, FAQs, and resources are designed to educate you on every aspect of foreclosure. Knowledge is power, and we aim to empower you to make the best decisions for your future.
+            We sympathize with your situation and know the stress and pain your going through. While there is no magic pill that will make it all go away, we can help you get your life back on track by avoiding the devastating negative affects that a foreclosure with have on your credit and future buying power.
             </p>
           </BasicSection>
-          <BasicSection imageUrl={homepic} title="How We Can Help" overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl={homepic} title="There may Still be Hope." overTitle="Knowledge is power" reversed>
             <p>
-            Our step-by-step guides, FAQs, and resources are designed to educate you on every aspect of foreclosure.{' '}
-              <strong>Knowledge is power,</strong>.  and we aim to empower you to make the best decisions for your future.
+            Before doing anything, we recommend going through our knowledge center with resources designed to educate you on every aspect of your financial situation.{' '}
+              <strong>Knowledge is power</strong>,  and we aim to empower you to make the best decisions for your future.
             </p>
             <ul>
-            <ul><Link href="/help-center">How to Avoid Foreclosure</Link> </ul>
-            <ul><Link href="/help-center">Understanding Your Finances</Link> </ul>
-            <ul><Link href="/help-center">Legal Procedures Explained</Link> </ul>
+            <ul><Link href="/help-center">Help Center</Link> </ul>
             </ul>
           </BasicSection>
           <BasicSection imageUrl={homepic} title="Get Started Today" overTitle="Start now">
             <p>
             {' '}
-              <Link href="/contact">Contact us</Link> 
+              Ready to get started? Complete our 2 minute application to instantly see if you quality.
+              <ul><Link href="/contact">Contact us</Link> 
+              </ul>
             </p>
           </BasicSection>
-          <BasicSection imageUrl={homepic} title="Transparent and Upfront" overTitle="Transparent" reversed>
-            <p>
-            We believe in complete transparency. {' '}
-              <strong>ALL</strong> fees and processes will be explained upfront, so there are no surprises. Your trust is our most valuable asset.
-            </p>
-            <ul>
-            </ul>
-          </BasicSection>
-          <BasicSection imageUrl={homepic} title="We're Here for You" overTitle="You">
-            <p>
-            Our support doesn&apost end once you&aposve avoided foreclosure. {' '}
-            We offer ongoing financial planning and support to ensure you never find yourself in this situation again.
-            </p>
-          </BasicSection>
-          <BasicSection imageUrl={homepic} title="Contact Information" overTitle="Contact" reversed>
-            <p>
-            Our step-by-step guides, FAQs, and resources are designed to educate you on every aspect of foreclosure.{' '}
-              <strong>Knowledge is power,</strong>.  and we aim to empower you to make the best decisions for your future.
-            </p>
-            <ul>
-            <ul><Link href="/contact">Phone: [Your Phone Number]</Link> </ul>
-            <ul><Link href="/contact">Email: [Your Email Address]</Link> </ul>
-            <ul><Link href="/contact">Address: [Your Office Address]</Link> </ul>
-            </ul>
-          </BasicSection>
+          
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
           <Cta />

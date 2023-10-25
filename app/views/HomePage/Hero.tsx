@@ -18,18 +18,18 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>Welcome to [Your Company Name] - Your Lifeline to Foreclosure Freedom</CustomOverTitle>
+        <CustomOverTitle>Welcome to Your Lifeline to Foreclosure Freedom</CustomOverTitle>
         <Heading>You&apos;re Not Alone, and There&apos;s a Way Out</Heading>
         <Description>
-        We understand that facing foreclosure is overwhelming. The stress, the uncertainty, the feeling that youre running out of options. But take a deep breath. Youve come to the right place.
+        We understand that facing foreclosure is overwhelming. The stress, the uncertainty, the feeling that you&apos;re running out of options. But take a deep breath. You&apos;ve come to the right place.
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
+          Get instantly pre-qualified in 2 minutes <span>&rarr;</span>
           </Button>
           <NextLink href="#whitepaper" passHref legacyBehavior>
             <Button transparent>
-              Features <span>&rarr;</span>
+              Help Center <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>
@@ -96,6 +96,7 @@ const Description = styled.p`
 
 const CustomOverTitle = styled(OverTitle)`
   margin-bottom: 2rem;
+  line-height: 1.6;  // Adjust as needed
 `;
 
 const Heading = styled.h1`

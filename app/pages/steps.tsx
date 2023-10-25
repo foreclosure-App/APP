@@ -6,17 +6,17 @@ import FaqSection from 'views/PricingPage/FaqSection';
 
 export default function PricingPage() {
   return (
-    <Page title="Steps" description="Cupidatat et reprehenderit ullamco aute ullamco anim tempor.">
+    <Page title="Steps to Save Yourself from Foreclosure">
       <Wrapper>
         <StepsSection>
-          <StepsTitle>Steps to Sell Your Home to Our Company</StepsTitle>
           <StepsList>
-            <StepItem>Step 1: Contact us to schedule a home evaluation.</StepItem>
-            <StepItem>Step 2: Our team will visit your home and assess its value.</StepItem>
-            <StepItem>Step 3: We will provide you with a fair cash offer for your home.</StepItem>
-            <StepItem>Step 4: If you accept the offer, we will proceed with the paperwork.</StepItem>
-            <StepItem>Step 5: We will handle all the necessary legal and financial processes.</StepItem>
-            <StepItem>Step 6: Once everything is finalized, we will close the deal and purchase your home.</StepItem>
+            <StepItem>Complete this form ADD A LINK to provide us with basic information about your home.</StepItem>
+            <StepItem>You will immediately learn if you pre-quality for our program.</StepItem>
+            <StepItem>If you pre-qualify, you will receive an email to create an account.</StepItem>
+            <StepItem>You'll provide us with a copy of your payoff statement, pictures of your home, and other necessary information.</StepItem>
+            <StepItem>Once our team has reviewed your information, we'll send you a contract to sign.</StepItem>
+            <StepItem>We'll take care of the title search and other due diligence.</StepItem>
+            <StepItem>A closing will be scheduled and we'll sign the final documents.</StepItem>
           </StepsList>
         </StepsSection>
 
@@ -53,6 +53,7 @@ ${media('<=tablet')} {
 const StepsList = styled.ul`
   list-style-type: decimal;
   padding-left: 2rem;
+  justify: left;
 `;
 
 const StepItem = styled.li`
