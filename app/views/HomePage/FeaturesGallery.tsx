@@ -99,7 +99,7 @@ const GalleryWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-top: 4rem;
-
+  width: 100%;
   ${media('<=desktop')} {
     flex-direction: column;
   }
