@@ -12,6 +12,8 @@ export function getAllPostsSlugs() {
 }
 
 function normalizePostName(postName: string) {
+  console.log('postName: ',postName);
+  
   return postName.replace('.mdx', '');
 }
 

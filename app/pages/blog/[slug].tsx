@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { staticRequest } from 'tinacms';
+import { Posts, PostsDocument, Query } from '.tina/__generated__/types';
 import Container from 'components/Container';
 import MDXRichText from 'components/MDXRichText';
 import { NonNullableChildrenDeep } from 'types';
@@ -14,7 +15,6 @@ import MetadataHead from 'views/SingleArticlePage/MetadataHead';
 import OpenGraphHead from 'views/SingleArticlePage/OpenGraphHead';
 import ShareWidget from 'views/SingleArticlePage/ShareWidget';
 import StructuredDataHead from 'views/SingleArticlePage/StructuredDataHead';
-import { Posts, PostsDocument, Query } from '.tina/__generated__/types';
 
 export default function SingleArticlePage(props: InferGetStaticPropsType<typeof getStaticProps>) {
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -79,6 +79,8 @@ export default function SingleArticlePage(props: InferGetStaticPropsType<typeof 
 }
 
 export async function getStaticPaths() {
+  console.log('postsListData1');
+  console.log('query');
   const postsListData = await staticRequest({
     query: `
       query PostsSlugs{
@@ -95,15 +97,16 @@ export async function getStaticPaths() {
     `,
     variables: {},
   });
-
+  console.log('postsListData2', postsListData);
   if (!postsListData) {
+    console.log('uhoh');
     return {
       paths: [],
       fallback: false,
     };
   }
 
-  type NullAwarePostsList = { getPostsList: NonNullableChildrenDeep<Query['getPostsList']> };
+  type NullAwarePostsList = { getPostsList: NonNullableChildrenDeep<['getPostsList']> };
   return {
     paths: (postsListData as NullAwarePostsList).getPostsList.edges.map((edge) => ({
       params: { slug: normalizePostName(edge.node.sys.basename) },
@@ -115,7 +118,7 @@ export async function getStaticPaths() {
 function normalizePostName(postName: string) {
   return postName.replace('.mdx', '');
 }
-
+console.log('before getStaticProps');
 export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: string }>) {
   const { slug } = params as { slug: string };
   const variables = { relativePath: `${slug}.mdx` };
@@ -133,11 +136,11 @@ export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: s
       }
     }
   `;
-
+  console.log('before data');
   const data = (await staticRequest({
     query: query,
     variables: variables,
-  })) as { getPostsDocument: PostsDocument };
+  })) as { getPostsDocument: typeof PostsDocument };
 
   return {
     props: { slug, variables, query, data },

@@ -8,57 +8,56 @@ import { media } from 'utils/media';
 const FEATURES = [
   {
     imageUrl: '/grid-icons/asset-1.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Rapid Home Purchase Process',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Close quickly, avoid foreclosure stress. We streamline home sales, ensuring a fast, efficient process to relieve your financial burden swiftly.',
   },
   {
     imageUrl: '/grid-icons/asset-2.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'No Fees or Commissions',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Save money with zero extra costs. Our service requires no fees or commissions, ensuring you get the full offer amount without deductions.',
   },
   {
     imageUrl: '/grid-icons/asset-3.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Fair Market Value Offers',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Receive honest, competitive home offers. We evaluate your property thoroughly to present an offer that reflects fair market value.',
   },
   {
     imageUrl: '/grid-icons/asset-4.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Buy Homes As-Is',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      "Sell your home in any condition. Don't worry about repairs or renovations; we purchase your property exactly as it stands.",
   },
   {
     imageUrl: '/grid-icons/asset-5.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Personalized Service Approach',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Tailored assistance for individual needs. Our experts provide personalized solutions, considering your unique situation for the best outcome.',
   },
   {
     imageUrl: '/grid-icons/asset-6.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Legalities and Paperwork Handled',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'We manage all legal paperwork. From legal work to documentation, we handle everything, simplifying the sale process for you.',
   },
   {
     imageUrl: '/grid-icons/asset-7.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Immediate Financial Relief',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Quickly alleviate mortgage payment pressures. Our process is designed to provide immediate relief from mortgage obligations and financial strain.',
   },
   {
     imageUrl: '/grid-icons/asset-8.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'Transparent Communication',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      "Honesty and clarity from start. We maintain open, transparent communication throughout, ensuring you're informed every step of the way.",
   },
   {
     imageUrl: '/grid-icons/asset-9.svg',
-    title: 'Lorem ipsum dolor sit amet.',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+    title: ' Post-Sale Support',
+    description: "Guidance continues after home sale. Our relationship doesn't end at the sale; we offer support to help you move forward.",
   },
 ];
 

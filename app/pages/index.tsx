@@ -45,8 +45,8 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li><strong>Free Consultation:</strong> Speak with our foreclosure specialists to understand your options.</li>
               <li><strong>Legal Support:</strong> Our network of local attorneys will ensure a fully transparent and and well thought out strategy.</li>
               <li><strong>Financial Consultation:</strong> If there is a chance you can avoid losing your home, we want to help by looking at key ways to manage your finances better.</li>
-                <li><strong>Negotiation with Lenders:</strong> We&apos;ll talk to your lenders to negotiate terms and stop the foreclosure process.</li>
-                <li><strong>Quick Sale Options:</strong> We are able to move far faster than banks so you&apos;ll be out of trouble within a week or two.</li>
+              <li><strong>Negotiation with Lenders:</strong> We&apos;ll talk to your lenders to negotiate terms and stop the foreclosure process.</li>
+              <li><strong>Quick Sale Options:</strong> We are able to move far faster than banks so you&apos;ll be out of trouble within a week or two.</li>
             </ul>
           </BasicSection>
           <BasicSection imageUrl={homepic} title="Your Path to Financial Freedom Starts Here" overTitle="Freedom">
@@ -59,9 +59,9 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             Before doing anything, we recommend going through our knowledge center with resources designed to educate you on every aspect of your financial situation.{' '}
               <strong>Knowledge is power</strong>,  and we aim to empower you to make the best decisions for your future.
             </p>
-            <ul>
+            
             <ul><Link href="/help-center">Help Center</Link> </ul>
-            </ul>
+            
           </BasicSection>
           <BasicSection imageUrl={homepic} title="Get Started Today" overTitle="Start now">
             <p>
